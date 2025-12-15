@@ -31,7 +31,7 @@ export default function SalesChart({ data, type }: SalesChartProps) {
         shadow
       "
     >
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" height={400}>
         {type === "bar" && (
           <BarChart data={data}>
             <XAxis dataKey="year" />
